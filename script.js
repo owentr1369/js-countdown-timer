@@ -20,10 +20,13 @@ function countdown() {
   const seconds = Math.floor(totalSeconds % 60);
 
   console.log(days, hours, minutes, seconds);
-  daysEl.innerHTML = days;
-  hoursEl.innerHTML = hours;
-  minsEl.innerHTML = minutes;
-  secondsEl.innerHTML = seconds;
+  daysEl.innerHTML = formatTime(days);
+  hoursEl.innerHTML = formatTime(hours);
+  minsEl.innerHTML = formatTime(minutes);
+  secondsEl.innerHTML = formatTime(seconds);
+}
+function formatTime(time) {
+  return time < 10 ? `0${time}` : time;
 }
 // Callback 1 time/sec
 setInterval(countdown, 1000);
