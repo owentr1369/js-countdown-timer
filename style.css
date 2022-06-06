@@ -11,4 +11,28 @@ body {
   max-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+h1 {
+  font-weight: normal;
+  font-size: 4rem;
+  margin-top: -18rem;
+}
+.countdown-container {
+  display: flex;
+}
+.big-text {
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0 2rem;
+}
+.countdown-el {
+  text-align: center;
+}
+.countdown-el span {
+  font-size: 1.4rem;
 }
