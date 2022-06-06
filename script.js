@@ -1,10 +1,13 @@
+// get HTML Element
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
 const secondsEl = document.getElementById("seconds");
 
+// New Years Time
 const newYears = "1 Jan 2023";
 
+// Functionality for days, hours, minutes, seconds
 function countdown() {
   const newYearsDate = new Date(newYears);
   const currentDate = new Date();
@@ -22,5 +25,5 @@ function countdown() {
   minsEl.innerHTML = minutes;
   secondsEl.innerHTML = seconds;
 }
-
+// Callback 1 time/sec
 setInterval(countdown, 1000);
