@@ -29,6 +29,7 @@ h1 {
   font-size: 6rem;
   line-height: 1;
   margin: 0 2rem;
+  min-width: 124px;
 }
 .countdown-el {
   text-align: center;
